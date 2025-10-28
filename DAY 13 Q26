@@ -1,0 +1,19 @@
+//Write a program to print numbers from 1 to n.
+#include <stdio.h>
+int main()
+     {
+    int n, i;
+
+    printf("Name - SUDHANSHU SHEKHAR \nSAP ID - 590021525 \nCourse - BCA \nBatch - B5");
+    printf("\n----------------------------------\n");
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++)
+    {
+        printf("%d\n", i);
+    }
+
+    return 0;
+}
