@@ -1,0 +1,42 @@
+Check if a string is a palindrome.
+Input 1:
+madam
+Output 1:
+Palindrome
+Input 2:
+hello
+Output 2:
+Not palindrome
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+            {
+    char str[100];
+    int i, length, flag = 0;
+
+    printf("Name - SUDHANSHU SHEKHAR \nSAP ID - 590021525 \nCourse - BCA \nBatch - B5");
+    printf("\n----------------------------------\n");
+
+    printf("Enter a string: ");
+    gets(str);
+
+    length = strlen(str);
+
+    for(i = 0; i < length / 2; i++)
+    {
+        if(str[i] != str[length - i - 1])
+        {
+            flag = 1;
+            break;
+        }
+    }
+
+    if(flag == 0)
+        printf("Palindrome\n");
+    else
+        printf("Not palindrome\n");
+
+    return 0;
+}
