@@ -1,0 +1,27 @@
+//#include <stdio.h>
+
+int main()
+            {
+    char str[100], ch;
+    int i = 0, count = 0;
+
+    printf("Name - SUDHANSHU SHEKHAR \nSAP ID - 590021525 \nCourse - BCA \nBatch - B5");
+    printf("\n----------------------------------\n");
+
+    printf("Enter a string: ");
+    gets(str);
+
+    printf("Enter the character to count: ");
+    scanf("%c", &ch);
+
+    while(str[i] != '\0')
+    {
+        if(str[i] == ch)
+            count++;
+        i++;
+    }
+
+    printf("%d\n", count);
+
+    return 0;
+}
