@@ -1,0 +1,27 @@
+//Write a program to find the 1’s complement of a binary number and print it.
+#include <stdio.h>
+int main()
+            {
+    long int binary, onesComplement = 0, place = 1, remainder;
+
+    printf("Name - SUDHANSHU SHEKHAR \nSAP ID - 590021525 \nCourse - BCA \nBatch - B5");
+    printf("\n----------------------------------\n");
+
+    printf("Enter a binary number: ");
+    scanf("%ld", &binary);
+
+    while(binary != 0)
+    {
+        remainder = binary % 10;
+        if(remainder == 0)
+            onesComplement = onesComplement + (1 * place);
+        else
+            onesComplement = onesComplement + (0 * place);
+        binary = binary / 10;
+        place = place * 10;
+    }
+
+    printf("1's Complement = %ld", onesComplement);
+
+    return 0;
+}
